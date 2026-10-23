@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-family: sans-serif;
+    background-image: url('img/bg_img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display:flex;
+    gap: 20%;
+    align-items: center;
+    background-color: #0D233A;
+    width: 100%;
+    box-sizing: border-box;
+    height: 50px;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+
+h2{
+    color: white;
+    padding: 0 24px;
+}
+
+nav ul{
+    display: flex;
+    gap: 35px;
+    list-style-type: none;
+}
+
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* button{
+    color: white;
+    background-color: #2ec4b6;
+    border-radius: 5px;
+    font-weight: bold;
+} */
+
+.search{
+    display: flex;
+    background-color: white;
+    height: 70%;
+    border-radius: 10px;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-left: 130px;
+    
+}
+
+#search_bar{
+    height: 10%;
+    width: 110%;
+    border-radius: 10px;
+    padding: 7px 16px;
+}
+
+.buttons{
+    display: flex;
+    gap: 5px;
+    padding-right: 5px;
+}
+
+.buttons button{
+    display: flex;
+    gap: 2px;
+    padding-right: 5px;
+    color: white;
+    background-color: #2ec4b6;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main{
+    /* margin-top: 15%; */
+    display: flex;
+    padding-top: 70px;
+    flex: 1;
+    
+}
+
+.introduction{
+    margin-left: 190px;
+}
+
+.introduction h1{
+    color: white;
+    font-size: 70px;;
+}
+
+.introduction p{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.about h1{
+    color: white;
+    font-size: 70px;;
+}
+
+.about p{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.introduction button{
+    background-color: green;
+    color: white;
+    width: 85px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.about_us {
+    margin-left: 190px;
+}
+
+.our_team{
+    margin-top: 150px;
+    display: flex;
+    color: white;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 10%;
+    
+}
+
+.our_team h2{
+    font-size: 70px;
+    padding-left: 0;
+}
+
+
+.teams img{
+    border-radius: 100%;
+    width:30%;
+    margin-left: 20%;
+}
+
+.teams h4{
+    margin-left: 15%;
+}
+
+.teams button{
+    margin-left: 25%;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    width: 60px;
+}
+
+.contact{
+    display: flex;
+    margin-top: 3%;
+    align-items: center;
+    margin-left: 5%;
+    gap: 50%;
+}
+
+.contact h1{
+    color: white;
+    font-size: 70px;
+    margin-left: 120px;
+}
+
+.contact p{
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 120px;
+}
+
+form{
+    display:grid;
+    border: 1px solid white;
+    width: 190%;
+    color: white;
+    gap: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+form input{
+    background-color: transparent;
+    border: 1px solid white;
+    font-weight: bold;
+    height: 30px;
+    color: white;
+}
+
+form input::placeholder{
+    color: white;
+    padding-left: 15px;
+}
+
+form textarea{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-weight: bold;
+    height: 80px;
+}
+
+form textarea::placeholder{
+    color: white;
+    padding-left: 15px;
+}
+
+form button{
+    background-color:mediumseagreen;
+    color:white;
+    height: 30px;
+}
+
+footer{
+    background-color: #0D233A;
+    color: white;
+    display: flex;
+    gap: 50%;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+/* Style for the grid wrapper handling the cards */
+#results_card {
+    display: grid;
+    /* Automatically creates columns that are equal fractions of space side-by-side */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; /* Adds nice spacing between the cards */
+    padding: 20px;
+    width: 100%;
+}
+
+/* #results_card p */ .none{
+    color: white;
+    font-size: 40px;
+    padding-left: 90px;
+}
+
+/* Individual card container layouts */
+.result-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent card background */
+    border: 4px solid #2ec4b6; /* Accents using your custom button teal */
+    border-radius: 70px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+
+.result-card h3{
+    font-size: 40px;
+}
+
+/* Force layout consistency on all incoming destination images */
+.result-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover; /* Crops varied images perfectly into standard dimensions */
+    border-radius: 70px;
+    border: 2px solid white;
+}
